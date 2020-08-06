@@ -45,6 +45,7 @@ Microsoft sa snaží každou novou verzí C# více podporovat funkcionální pro
 Příklady:
 
 https://blogs.msdn.microsoft.com/dotnet/2016/08/24/whats-new-in-csharp-7-0/
+https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8
 
 1. Expression Bodied Functions and Properties
 ```
@@ -106,8 +107,20 @@ public int Fibonacci(int x)
     }
 }
 ```
-6. Using static
+
+6. Tuple patterns
 ```
-public double Circumference
-   => PI * 2 * Radius;
+public static string RockPaperScissors(string first, string second)
+    => (first, second) switch
+    {
+        ("rock", "paper") => "rock is covered by paper. Paper wins.",
+        ("rock", "scissors") => "rock breaks scissors. Rock wins.",
+        ("paper", "rock") => "paper covers rock. Paper wins.",
+        ("paper", "scissors") => "paper is cut by scissors. Scissors wins.",
+        ("scissors", "rock") => "scissors is broken by rock. Rock wins.",
+        ("scissors", "paper") => "scissors cuts paper. Scissors wins.",
+        (_, _) => "tie"
+    };
 ```
+
+...
