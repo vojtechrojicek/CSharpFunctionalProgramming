@@ -44,7 +44,7 @@ Microsoft sa snaží každou novou verzí C# více podporovat funkcionální pro
 
 Příklady:
 
-https://blogs.msdn.microsoft.com/dotnet/2016/08/24/whats-new-in-csharp-7-0/
+https://blogs.msdn.microsoft.com/dotnet/2016/08/24/whats-new-in-csharp-7-0/  
 https://docs.microsoft.com/en-us/dotnet/csharp/whats-new/csharp-8
 
 1. Expression Bodied Functions and Properties
